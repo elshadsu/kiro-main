@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Practice — Building an Architecture Reasoning Agent (Kiro IDE edition)
 
 In this practice you will build agents from scratch: an engineering team lead chatbot, an architecture reasoning orchestrator, and an RFC writer sub-agent. The tools and data are provided — your job is to write the agent instructions.
@@ -249,3 +250,17 @@ With the **architect** selected, after you have picked an option, ask it to draw
 - Browse `conduit-realworld-example-app/backend/` — the agent should be able to reason about what the real code actually does, not just the company doc.
 - The write gate is the most important guardrail. Test that the agent does **not** call `write_adr` when you say "looks good" or "I approve".
 - If the agent skips a step, add more explicit ordering language to the workflow section ("do not proceed to step N until step N-1 is complete") — but add rules only against a flaw you actually observe, not pre-emptively.
+=======
+# PR Review Agent — practice project
+
+You are building a PR Review Agent for the Python team. It reviews Python pull requests for
+style, security, and architecture issues, organizes findings per file with `[SEVERITY]` tags,
+ends with a `## Summary`, and always asks for confirmation before posting a comment to GitHub.
+
+## Files to complete in this task
+
+- `AGENTS.md` — the agent system prompt. Cover four sections: **Role**, **Review criteria**,
+  **Output format** (with `[SEVERITY]` tags and a closing `## Summary`), and **Guardrails**.
+- `results/test-session-1.md` — a transcript of your three tests: the clean-PR format check, the
+  publish-gate confirmation, and the scope refusal.
+>>>>>>> 0c2246ddbad3cdb2ef26cc092fb7c007b5720f47

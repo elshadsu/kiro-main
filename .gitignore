@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OS
 .DS_Store
 Thumbs.db
@@ -32,3 +33,9 @@ output/tmp/
 __pycache__/
 *.pyc
 *.pyo
+=======
+# TODO: ensure your GitHub MCP configuration file (which holds your personal
+# access token) is listed here so it is never committed. In Kiro this is
+# .kiro/settings/mcp.json (workspace) or ~/.kiro/settings/mcp.json (user).
+[PLACEHOLDER]
+>>>>>>> 0c2246ddbad3cdb2ef26cc092fb7c007b5720f47
