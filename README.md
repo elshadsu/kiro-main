@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 # Practice — Building an Architecture Reasoning Agent (Kiro IDE edition)
-
+Testing PR workflow. test
 In this practice you will build agents from scratch: an engineering team lead chatbot, an architecture reasoning orchestrator, and an RFC writer sub-agent. The tools and data are provided — your job is to write the agent instructions.
 
 Everything runs inside **Kiro IDE**. You open the repository **once** at its root and switch between agents using the **agent picker** — there is no `cd` into sub-folders and no terminal launch command.
