@@ -1,8 +1,9 @@
 # Evaluation
 
 <!--
-TODO: write the Rubric first, score the five saved outputs, run the prompt
-injection test, cross-reference failures with your run log (run-log.jsonl), and write one improvement proposal.
+TODO: write the Rubric first, score the five saved outputs, run the
+prompt injection test, cross-reference failures with your run log
+(run-log.jsonl), and write one improvement proposal.
 -->
 
 ## Rubric
@@ -17,7 +18,7 @@ injection test, cross-reference failures with your run log (run-log.jsonl), and 
 
 ## Scores
 
-| Input | Correct findings? | Hallucinated rule? | Severity correct? | ADR cited (if applicable)? |
+| Input | Correct findings? | Hallucinated rule? | Severity correct? | ADR cited? |
 | --- | --- | --- | --- | --- |
 | PR-01 | [PLACEHOLDER] | | | |
 | PR-02 | [PLACEHOLDER] | | | |
