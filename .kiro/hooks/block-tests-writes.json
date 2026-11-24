@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Block writes under tests/",
+      "trigger": "PreToolUse",
+      "description": "Blocks any file write, replace, or push targeting a path under tests/ before the tool runs.",
+      "matcher": "fs_write|str_replace|create_or_update_file|push_files",
+      "action": {
+        "type": "command",
+        "command": "$input = $input | ConvertFrom-Json; $path = $input.tool_input.path; if ($path -match 'tests[\\\\/]') { Write-Error 'Writes to tests/ are blocked by policy. Get explicit approval before modifying test files.'; exit 2 }"
+      }
+    }
+  ]
+}
