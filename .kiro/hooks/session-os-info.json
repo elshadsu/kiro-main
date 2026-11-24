@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Show OS at session start",
+      "trigger": "SessionStart",
+      "description": "Runs uname -sr at the start of every session and surfaces the kernel/OS string",
+      "action": {
+        "type": "command",
+        "command": "uname -sr"
+      }
+    }
+  ]
+}

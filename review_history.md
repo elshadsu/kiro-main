@@ -6,4 +6,4 @@ TODO: episodic memory log. After every completed review, append one line:
 Example: 2026-05-15 | PR-03 | Hardcoded API token in PaymentService | HIGH
 -->
 
-[PLACEHOLDER]
+2026-11-22 | PR-1 | Leftover test placeholder text in README on main branch | MEDIUM

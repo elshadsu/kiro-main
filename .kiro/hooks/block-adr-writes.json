@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Block ADR file writes",
+      "trigger": "PreToolUse",
+      "description": "Blocks any write to a file under docs/adr/ before it happens",
+      "matcher": "fs_write|str_replace|create_or_update_file|push_files",
+      "action": {
+        "type": "command",
+        "command": "$input = $input | ConvertFrom-Json; $path = $input.tool_input.path; if ($path -match 'docs[\\\\/]adr[\\\\/]') { Write-Error 'Writes to docs/adr/ are blocked. Edit ADR files manually or get explicit approval.'; exit 2 }"
+      }
+    }
+  ]
+}

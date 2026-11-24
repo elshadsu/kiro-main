@@ -1,13 +1,18 @@
 ---
 name: "app-conventions"
-description: "[PLACEHOLDER] — must name a concrete trigger, not the .py extension"
+description: >
+  [PLACEHOLDER] — must name a concrete trigger, not the .py extension
 ---
+
+# App Conventions
 
 <!--
 TODO: Application-code conventions knowledge skill.
-- Description: load only when reviewing non-test Python code (not under tests/, not
-  test_*.py/*_test.py) — since test files are also .py, name a concrete trigger.
-- Body: at least three rules covering naming, type hints/docstrings, and error handling.
+- Description: load only when reviewing non-test Python code (not under
+  tests/, not test_*.py/*_test.py) — since test files are also .py,
+  name a concrete trigger.
+- Body: at least three rules covering naming, type hints/docstrings, and
+  error handling.
 - Template: one compliant and one non-compliant snippet.
 -->
 

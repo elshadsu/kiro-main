@@ -30,3 +30,6 @@ Do not include PR numbers, author names, or internal ticket IDs.
 - If the input PR list is empty, stop and report: "No merged PRs found"
 - Stop after 2 drafting passes and present the best output with a note
   on what is incomplete
+- After every completed review (whether or not the user confirms posting), append one line to `review_history.md`:
+YYYY-MM-DD | PR-[number] | [top finding short description] | [severity]
+Example: 2026-05-15 | PR-03 | Hardcoded API token in PaymentService | HIGH

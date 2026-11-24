@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Markdown Lint on Turn End",
+      "trigger": "Stop",
+      "description": "Runs markdownlint-cli2 on all Markdown files after every agent turn",
+      "action": {
+        "type": "command",
+        "command": "markdownlint-cli2 \"**/*.md\"",
+        "timeout": 60
+      }
+    }
+  ]
+}
