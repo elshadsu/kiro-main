@@ -8,7 +8,7 @@
         "type": "command",
         "command": "\"command\": \"wc -c >> run-log.jsonl\""
       },
-      "enabled": true
+      "enabled": false
     }
   ]
 }
