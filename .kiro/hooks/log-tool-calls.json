@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Log Tool Calls",
+      "trigger": "PostToolUse",
+      "action": {
+        "type": "command",
+        "command": "\"command\": \"wc -c >> run-log.jsonl\""
+      },
+      "enabled": true
+    }
+  ]
+}

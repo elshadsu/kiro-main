@@ -12,4 +12,6 @@
 
 ## Review notes
 
-- **"Add test feature for PR practice"** — The PR description indicates this is a workflow test PR rather than a user-facing feature. Confirm whether this entry should appear in published release notes.
+- **"Add test feature for PR practice"** — The PR description indicates this
+  is a workflow test PR rather than a user-facing feature. Confirm whether
+  this entry should appear in published release notes.

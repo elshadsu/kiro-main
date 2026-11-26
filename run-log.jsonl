@@ -1,0 +1,5 @@
+﻿kiro-cli chat --no-interactive --require-mcp-startup --trust-tools=read,grep,@github/get_pull_request "Run the review-pr workflow on PR 1"
+kiro-cli chat --no-interactive --require-mcp-startup --trust-tools=read,grep,@github/get_pull_request "Run the review-pr workflow on PR 2"
+kiro-cli chat --no-interactive --require-mcp-startup --trust-tools=read,grep,@github/get_pull_request "Run the review-pr workflow on PR 3"
+kiro-cli chat --no-interactive --require-mcp-startup --trust-tools=read,grep,@github/get_pull_request "Run the review-pr workflow on PR 4"
+kiro-cli chat --no-interactive --require-mcp-startup --trust-tools=read,grep,@github/get_pull_request "Run the review-pr workflow on PR 5"

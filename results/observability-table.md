@@ -1,9 +1,10 @@
 # Observability table
 
 <!--
-TODO: turn on the Post Tool Use log hook (.kiro/hooks/log-tool-calls.json), run
-/review-pr 1 through /review-pr 5, then fill in this table from run-log.jsonl
-(filter one run by its session_id) and answer the PR-03 diagnostic.
+TODO: turn on the Post Tool Use log hook
+(.kiro/hooks/log-tool-calls.json), run /review-pr 1 through
+/review-pr 5, then fill in this table from run-log.jsonl (filter one
+run by its session_id) and answer the PR-03 diagnostic.
 -->
 
 | Input | Tools called (count) | `security-reviewer` delegated? | Any tool error? |
