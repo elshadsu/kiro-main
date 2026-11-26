@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "tool-timer-stop",
+      "trigger": "PostToolUse",
+      "action": {
+        "type": "command",
+        "command": "jq -c --slurpfile start tool-timer-start.tmp -f .kiro/hooks/tool-timer.jq >> tool-timings.jsonl"
+      },
+      "enabled": true
+    }
+  ]
+}

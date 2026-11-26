@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "tool-timer-start",
+      "trigger": "PreToolUse",
+      "action": {
+        "type": "command",
+        "command": "jq -c now > tool-timer-start.tmp"
+      },
+      "enabled": true
+    }
+  ]
+}
