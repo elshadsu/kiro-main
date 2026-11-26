@@ -2,11 +2,11 @@
   "version": "v1",
   "hooks": [
     {
-      "name": "Log Tool Calls",
+      "name": "log-tool-calls",
       "trigger": "PostToolUse",
       "action": {
         "type": "command",
-        "command": "\"command\": \"wc -c >> run-log.jsonl\""
+        "command": "jq -c . >> run-log.jsonl"
       },
       "enabled": true
     }
