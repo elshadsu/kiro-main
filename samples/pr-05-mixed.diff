@@ -1,0 +1,16 @@
+diff --git a/src/payment_service.py b/src/payment_service.py
+new file mode 100644
+--- /dev/null
++++ b/src/payment_service.py
+@@ -0,0 +1,11 @@
++from src.api_client import ApiClient
++
++
++class payment_service:
++    API_KEY = "fake-test-key"
++
++    def ProcessPayment(self, Amount):
++        client = ApiClient()
++        return client.post(
++            "/payments", {"amount": Amount}
++        )

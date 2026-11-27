@@ -1,0 +1,17 @@
+diff --git a/src/ride_service.py b/src/ride_service.py
+new file mode 100644
+--- /dev/null
++++ b/src/ride_service.py
+@@ -0,0 +1,12 @@
++from src.api_client import ApiClient
++
++
++class RideService:
++    """Service for retrieving rides."""
++
++    def __init__(self, api_client: ApiClient):
++        self._api_client = api_client
++
++    def get_rides(self) -> list:
++        """Return available rides."""
++        return self._api_client.get("/rides")
