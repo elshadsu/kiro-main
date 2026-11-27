@@ -1,24 +1,34 @@
 ---
-name: "test-conventions"
-description: "[PLACEHOLDER] — must name a concrete trigger, not the .py extension"
+name: "app-conventions"
+description: >
+  Load when reviewing non-test Python application code.
+  Exclude tests/, test_*.py, and *_test.py files.
 ---
 
-# Test Conventions
-
-<!--
-TODO: Test-code conventions knowledge skill.
-- Description: load only when reviewing test code (tests/,
-  test_*.py/*_test.py, or files that import pytest) — since app files
-  are also .py, name a concrete trigger.
-- Body: at least three rules covering naming, fixtures, and isolation.
-  Tag severity.
-- Template: one compliant and one non-compliant test snippet.
--->
+# App Conventions
 
 ## Rules
 
-[PLACEHOLDER]
+- [LOW] Naming: use snake_case for functions and variables, PascalCase for classes, and UPPER_CASE for constants.
+- [LOW] Documentation: public functions must include type hints and docstrings.
+- [MEDIUM] Error handling: catch specific exceptions instead of using bare except statements. Do not silently suppress errors.
 
 ## Template
 
-[PLACEHOLDER]
+### Compliant
+
+```python
+def calculate_total(price: float, quantity: int) -> float:
+    """Calculate the total price."""
+    return price * quantity
+```
+
+### Non-compliant
+
+```python
+def CalculateTotal(Price, Quantity):
+    try:
+        return Price * Quantity
+    except:
+        pass
+```
